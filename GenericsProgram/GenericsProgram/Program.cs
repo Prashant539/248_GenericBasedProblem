@@ -7,7 +7,7 @@ namespace GenericsProgram
     {
             Console.WriteLine("Welcome to Generics Based Problem");
             Console.WriteLine("Please select given options");
-            Console.WriteLine("1.FindIntergerMaximumNumber\n2.Exit\n");
+            Console.WriteLine("1.FindIntergerMaximumNumber\n2.FindMaxFloatNumber\n10:Exit");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -18,6 +18,11 @@ namespace GenericsProgram
                     int thirdValue = Convert.ToInt32(Console.ReadLine());
                     int output = FindMaxiumNumber.MaximumIntergerNumber(firstValue, secondValue, thirdValue);
                     Console.WriteLine("{0} is the maximum number", output);
+                    break;
+                case 2:
+                    Console.WriteLine("The Greatest Value is {0}", MaxFloat.MaximumFloatNumber(21.5f, 14.9f, 15));
+                    Console.WriteLine("The Greatest Value is {0}", MaxFloat.MaximumFloatNumber(12, 90, 15.3f));
+                    Console.WriteLine("The Greatest Value is {0}", MaxFloat.MaximumFloatNumber(12, 14, 25.1f));
                     break;
                 default:
                     Console.Clear();
